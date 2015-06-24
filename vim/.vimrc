@@ -15,6 +15,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'xolox/vim-session'
 NeoBundle 'xolox/vim-misc'
+NeoBundle 'soriac/vim-highlight'
 call neobundle#end()
 NeoBundleCheck
 
