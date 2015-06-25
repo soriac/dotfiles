@@ -31,7 +31,6 @@ set expandtab
 set list listchars=tab:»\ ,trail:•
 
 filetype plugin indent on
-colors railcasts
 syntax enable
 
 " CD
