@@ -1,4 +1,3 @@
-fortune
 # Path to your oh-my-zsh installation.
 export ZSH=/home/fulcano/.oh-my-zsh
 
@@ -6,10 +5,15 @@ export ZSH=/home/fulcano/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+RPROMPT=" %{%F{blue}%K{default}%}$(echo "\ue0b2")%F{black}%K{blue} %? %F{black}%K{blue}$(echo "\ue0b2")%F{default}%K{black} $(date "+%a %H:%M:%S") "
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -50,7 +54,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -79,10 +83,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-autoload -U promptinit
-promptinit
-xrdb ~/.Xresources
-
-alias ls="ls --group-directories-first --color=auto"
-alias mv="mv -iv"
-alias clear="clear; fortune;"
