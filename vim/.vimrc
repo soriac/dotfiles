@@ -24,14 +24,16 @@ autocmd FileType python nnoremap <buffer> <F9> :!python %<CR>
 autocmd FileType ruby nnoremap <buffer> <F9> :!ruby %<CR>
 
 " vim options
+color default
 set backspace=2 autoindent smartindent
-set number relativenumber
+set relativenumber
 set softtabstop=8 shiftwidth=2 nowrap
 set expandtab
 set list listchars=tab:»\ ,trail:•
 
 filetype plugin indent on
 syntax enable
+
 
 " CD
 cd ~/Programming
@@ -41,5 +43,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" sessions
+let g:session_autosave = 'no'
 
 highlight Search ctermbg=NONE ctermfg=NONE cterm=underline
